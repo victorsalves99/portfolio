@@ -52,7 +52,9 @@ body {
   align-items: center;
   padding: 70px 0;
 }
-
+.home .container-content {
+  width: 500px;
+}
 .home .container-content h1 {
   font-size: 4rem;
   font-weight: 600;

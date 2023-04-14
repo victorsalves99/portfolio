@@ -37,5 +37,31 @@
           <a href="./contact.html" class="navigation-link active">Contact</a>
         </nav>
     </header>
+    <section class="container-form">
+      <form action="https://api.staticforms.xyz/submit" method="post" class="form">
+
+        <h2>Formulário de Contato</h2>
+
+        <input type="hidden" name="accessKey" value="cca4e9d3-8fc9-41c7-8adc-5b13d3a48024">
+
+        <input type="hidden" name="redirectTo" value="https://victorsalves99.github.io/portfolio/pages/contact/contact.html">
+        <div class="container-input">
+          <label for="name">Nome:</label>
+          <input type="text" name="name" id="name" required maxlength="30" minlength="4"> 
+        </div>
+        <div class="container-input">
+          <label for="email">E-mail:</label>
+          <input type="text" name="email" id="email" required maxlength="60" minlength="10"> 
+        </div>
+        <div class="container-input">
+          <label for="menssagem">Menssagem:</label>
+          <textarea type="text" name="message" id="menssagem" required maxlength="150" value=""></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+        
+
+      </form>
+
+    </section>
 </body>
 </html>
