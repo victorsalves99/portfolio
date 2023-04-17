@@ -195,6 +195,9 @@
     .navbar {
       padding: 0 2rem;
     }
+    .navbar .navbar-navigation {
+      right: 0;
+    }
     .container-form form h2 {
       font-size: 1.5rem;
     }
