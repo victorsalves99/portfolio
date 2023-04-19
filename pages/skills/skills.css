@@ -44,8 +44,116 @@
   .navbar .navbar-navigation .active {
     color: #00e0fea7;
   }
+  main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 4rem;
+    gap: 4rem;
+    flex-wrap: nowrap;
+  }
+
+  .container-soft-skill {
+    width: 100%;
+  }
+  .container-soft-skill h2 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    background: linear-gradient(to bottom,#000015,#3ed);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .container-soft-skill .soft-skill {
+    width: 100%;
+  }
+  .container-soft-skill .soft-skill ul {
+    width: 100%;
+    border-right: 2px solid #3ed;
+    text-align: center;
+    border-radius: 2rem;
+    
+  }
+  .container-soft-skill .soft-skill ul li{
+    border-bottom: 4px solid #3ed;
+    padding: 3rem 0;
+    list-style: none;
+    font-size: 1.5rem;
+    background: linear-gradient(to right , #000015,#33eedec4);
+    border-radius: 0 2rem ;
+    transition: .6s;
 
 
+  }
+  .container-soft-skill .soft-skill ul li:hover {
+    background: linear-gradient(to right ,#33eedec4, #000015);
+    transform:  scale(1.1);
+  }
+
+
+
+
+
+
+
+  .container-hard-skill {
+    width: 100%;
+  }
+  .container-hard-skill h2 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    background: linear-gradient(to bottom,#000015,#3ed);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .container-hard-skill .hard-skill {
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  .container-hard-skill .hard-skill .icon-hard-skill{
+    border-radius: 50%;
+    border: 6px solid #3ed;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 0.6s;
+  }
+  .container-hard-skill .hard-skill .icon-hard-skill:hover {
+    background-color: #3ed;
+    border: 6px solid #fff;
+  }
+  .container-hard-skill .hard-skill .icon-hard-skill:hover > .icon-hard {
+    color: #fff;
+  }
+  .container-hard-skill .hard-skill .icon-hard-skill:hover > p {
+    color: #fff;
+    bottom: 10px;
+  }
+  .container-hard-skill .hard-skill .icon-hard-skill .icon-hard{
+    font-size: 6rem;
+    text-align: center;
+    color: #3ed;
+    
+
+    
+  }
+  .container-hard-skill .hard-skill .icon-hard-skill p {
+    font-weight: 600;
+    position: absolute;
+    bottom: -10px;
+    color: transparent;
+    transition: 0.6s;
+
+  }
 
 
   @media (max-width: 850px) {
@@ -56,7 +164,7 @@
       position: absolute;
       flex-direction: column;
       top: 80px;
-      right: -20px;
+      right: 0px;
       background-color: #0000004a;
       width: 200px;
       padding: 2em;
@@ -65,5 +173,31 @@
     .navbar .response-active {
       display: none;
     }
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      
+    }
     
+  }
+
+  @media (max-width: 517px) {
+    body {
+      padding: 0 1rem ;
+    }
+    .container-hard-skill h2,.container-soft-skill h2 {
+      font-size: 3rem;
+    }
+    .navbar {
+      padding: 2rem;
+    }
+    .navbar .navbar-title {
+      font-size: 1.5rem;
+      cursor: default;
+    }
+    .container-soft-skill .soft-skill ul li {
+      font-size: 1.2rem;
+      padding: 2rem;
+    }
   }
