@@ -47,7 +47,114 @@
 
 
 
+  .container-projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-projects .type-project {
+    text-align: center;
+  }
+  .container-projects .type-project p {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+  }
+  .container-projects .type-project div {
+    background-color: #9c9b9b;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: inset 0px 0px 75px #000000;
+    display: flex;
+    gap: 2rem;
+  }
+  .container-projects .type-project div button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+  }
+  .container-projects .type-project div .active {
+    color: #3ed;
+  }
 
+
+  .procjects {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 0;
+    width: 100%;
+    
+  }
+  .procjects .project {
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+  .procjects .project .img-project {
+    width: 50%;
+    height: 450px;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid #3ed;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #3ed;
+    
+  }
+
+
+  .procjects .project .description-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+  .procjects .project .description-project h3 {
+    font-size: 3rem;  
+  }
+  .procjects .project .description-project p {
+    font-size: 1.5rem;
+    text-align: justify;  
+    color: #9c9b9b;
+    margin: 3rem 0;
+  }
+  .procjects .project .description-project .technologies  i {
+    font-size: 4rem; 
+    color: #3ed;
+    transition: .5s;
+    
+  }
+  .procjects .project .description-project .technologies  i:hover {
+    transform: scale(1.1);
+  }
+  .procjects .project .description-project .btn-project {
+    display: flex;
+    gap: 5rem;
+    margin-top: 3rem;
+  }
+  .procjects .project .description-project .btn-project button {
+    font-size: 1.3rem;
+    padding: .5rem 3rem;
+    font-weight: 600;
+    border-radius: 10px;
+    background: linear-gradient(to right, #000015,#3ed);
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: .5s;
+  }
+  .procjects .project .description-project .btn-project button:hover {
+    transform: scale(1.05);
+  }
+  .procjects .project .description-project .btn-project button a{
+    text-decoration: none;
+    color: #fff;
+  }
   @media (max-width: 850px) {
     .navbar .menu-active {
       display: block;

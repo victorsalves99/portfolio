@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Project</title>
     <!-- Link do css -->
     <link rel="stylesheet" href="project.css">
     <!-- Link javaScript -->
     <script src="../../main.js" defer></script>
+    <script src="project.js" defer></script>
+    <!-- Importação de fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Importação de incones do boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 </head>
-<body>
+<body onload="technologies()">
     <header class="navbar">
         <h2 class="navbar-title">Victor Alves</h2>
         <div class="menu-active">
@@ -37,5 +50,20 @@
           <a href="../contact/contact.html" class="navigation-link">Contact</a>
         </nav>
     </header>
+    <section class="container-projects">
+      <div class="type-project">
+        <p>Categorias</p>
+        <div>
+          <button class="btn-category active" id="all">All</button>
+          <button class="btn-category" id="my-project">My Project</button>
+          <button class="btn-category" id="course-project">Courses Project</button>
+         
+        </div>
+      </div>
+
+    </section>
+    <section class="procjects">
+
+    </section>
 </body>
 </html>
