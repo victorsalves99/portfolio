@@ -4,8 +4,6 @@ buttom.forEach((buttom) => {
     document.querySelectorAll(".btn-category").forEach((item) => {
       item.classList.remove("active");
     });
-
-    console.log(document.querySelector(".procjects"));
     document.querySelector(".procjects").innerText = "";
 
     ev.target.classList.add("active");
@@ -14,9 +12,8 @@ buttom.forEach((buttom) => {
         (projeto) => projeto.cartegory === "myproject"
       );
       myProject.forEach(
-        ({ path, title, description, tecnology, linkCodigo, linkSite }) => {
+        ({  title, description, tecnology, linkCodigo, linkSite }) => {
           CriarProjeto(
-            path,
             title,
             description,
             tecnology,
@@ -27,12 +24,11 @@ buttom.forEach((buttom) => {
       );
     } else if (ev.target.id === "course-project") {
       const coureseProject = projetos.filter(
-        (projeto) => projeto.cartegory === "coursesproject"
+        (projeto) => projeto.cartegory === "courseProject"
       );
       coureseProject.forEach(
-        ({ path, title, description, tecnology, linkCodigo, linkSite }) => {
+        ({ title, description, tecnology, linkCodigo, linkSite }) => {
           CriarProjeto(
-            path,
             title,
             description,
             tecnology,
@@ -43,9 +39,8 @@ buttom.forEach((buttom) => {
       );
     } else {
       projetos.forEach(
-        ({ path, title, description, tecnology, linkCodigo, linkSite }) => {
+        ({  title, description, tecnology, linkCodigo, linkSite }) => {
           CriarProjeto(
-            path,
             title,
             description,
             tecnology,
@@ -59,14 +54,13 @@ buttom.forEach((buttom) => {
 });
 const technologies = () => {
   projetos.map(
-    ({ path, title, description, tecnology, linkCodigo, linkSite }) => {
-      CriarProjeto(path, title, description, tecnology, linkCodigo, linkSite);
+    ({ title, description, tecnology, linkCodigo, linkSite }) => {
+      CriarProjeto( title, description, tecnology, linkCodigo, linkSite);
     }
   );
 };
 
 const CriarProjeto = (
-  path,
   title,
   description,
   tecnology,
@@ -78,9 +72,11 @@ const CriarProjeto = (
   const project = document.createElement("div");
   project.classList.add("project");
 
-  const ImgProject = document.createElement("div");
-  ImgProject.classList.add("img-project");
-  ImgProject.style.backgroundImage = `url(${path})`;
+  const iframeProject = document.createElement("iframe");
+  iframeProject.classList.add("iframe-project");
+  iframeProject.setAttribute("src",`${linkSite}`)
+  // iframeProject.setAttribute("scrolling",`no`)
+
 
   const ContainerDescricao = document.createElement("div");
   ContainerDescricao.classList.add("description-project");
@@ -130,14 +126,73 @@ const CriarProjeto = (
     BotaoProjeto
   );
 
-  project.append(ImgProject, ContainerDescricao);
+  project.append(iframeProject, ContainerDescricao);
 
   projects.appendChild(project);
 };
 
 const projetos = [
   {
-    path: "../../img/img-projects/consultasGithub.jpg",
+    title: "OneBitX",
+    description:
+      "Site criado pela OneBitCode com referencia na SpaceX",
+    tecnology:[
+      {
+        name: "html5",
+      },
+      {
+        name: "css3",
+      },
+      {
+        name: "bootstrap",
+      },
+      {
+        name: "sass",
+      },
+    ],
+    linkCodigo: "https://github.com/victorsalves99/onibitX",
+    linkSite: "https://victorsalves99.github.io/onibitX/",
+    cartegory: "courseProject",
+  },
+  {
+    title: "Imovi",
+    description:
+      "Site criado pela canal do Youtube Hora de codar sobre casas planejadas.",
+    tecnology:[
+      {
+        name: "html5",
+      },
+      {
+        name: "css3",
+      },
+      {
+        name: "bootstrap",
+      },
+    ],
+    linkCodigo: "https://github.com/victorsalves99/iMov",
+    linkSite: "https://victorsalves99.github.io/iMov/",
+    cartegory: "courseProject",
+  },
+  {
+    title: "Jogo do Mario",
+    description:
+      "jogo criado pelo canal do Youtube manual do Dev, Um jogo simples do Super Mario Bros",
+    tecnology:[
+      {
+        name: "html5",
+      },
+      {
+        name: "css3",
+      },
+      {
+        name: "javascript",
+      },
+    ],
+    linkCodigo: "https://github.com/victorsalves99/jogo-do-mario",
+    linkSite: "https://victorsalves99.github.io/jogo-do-mario/",
+    cartegory: "courseProject",
+  },
+  {
     title: "Consultas Github",
     description:
       "Aplicação web para fazer consultas a usuarios e  repositorios  do Github ",
@@ -156,4 +211,53 @@ const projetos = [
     linkSite: "https://victorsalves99.github.io/consutasGithub/",
     cartegory: "myproject",
   },
+  {
+    title: "Esportes",
+    description:
+      "Site criado pela OneBitCode, feito para informar mais sobre os esportes ",
+    tecnology:[
+      {
+        name: "html5",
+      },
+      {
+        name: "css3",
+      }
+    ],
+    linkCodigo: "https://github.com/victorsalves99/esporte",
+    linkSite: "https://victorsalves99.github.io/esporte/",
+    cartegory: "courseProject",
+  },
+  {
+    title: "Cordel",
+    description:
+      "Site criado pelo Curso em Video, que retrata um poema ",
+    tecnology:[
+      {
+        name: "html5",
+      },
+      {
+        name: "css3",
+      }
+    ],
+    linkCodigo: "https://github.com/victorsalves99/cordel",
+    linkSite: "https://victorsalves99.github.io/cordel/",
+    cartegory: "courseProject",
+  },
+  {
+    title: "Android",
+    description:
+      "Site criado pelo Curso em Video, que fala sobre a Historia do Android.",
+    tecnology:[
+      {
+        name: "html5",
+      },
+      {
+        name: "css3",
+      }
+    ],
+    linkCodigo: "https://github.com/victorsalves99/projeto-android",
+    linkSite: "https://victorsalves99.github.io/projeto-android/",
+    cartegory: "courseProject",
+  },
+  
 ];
