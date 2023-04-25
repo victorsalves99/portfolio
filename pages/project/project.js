@@ -155,6 +155,25 @@ const projetos = [
     cartegory: "courseProject",
   },
   {
+    title: "Consulta Cep",
+    description:
+      "Aplicação web para fazer consulta de cep",
+    tecnology:[
+      {
+        name: "html5",
+      },
+      {
+        name: "css3",
+      },
+      {
+        name: "javascript",
+      },
+    ],
+    linkCodigo: "https://github.com/victorsalves99/buscador-cep",
+    linkSite: "https://victorsalves99.github.io/buscador-cep/",
+    cartegory: "myproject",
+  },
+  {
     title: "Imovi",
     description:
       "Site criado pela canal do Youtube Hora de codar sobre casas planejadas.",
