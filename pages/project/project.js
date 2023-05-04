@@ -231,6 +231,34 @@ const projetos = [
     cartegory: "myproject",
   },
   {
+    title: "Silvinhas Doces",
+    description:
+      "Site web de uma confeitaria de bolos e Doces ",
+    tecnology:[
+      {
+        name: "html5",
+      },
+      {
+        name: "css3",
+      },
+      {
+        name: "javascript",
+      },
+      {
+        name: "bootstrap",
+      },
+      {
+        name: "sass",
+      },
+      {
+        name: "react",
+      },
+    ],
+    linkCodigo: "https://github.com/victorsalves99/silvinha",
+    linkSite: "https://silvinhadoces-f9l91xdlt-victorsalves99.vercel.app/",
+    cartegory: "myproject",
+  },
+  {
     title: "Esportes",
     description:
       "Site criado pela OneBitCode, feito para informar mais sobre os esportes ",
