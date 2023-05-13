@@ -212,6 +212,31 @@ const projetos = [
     cartegory: "courseProject",
   },
   {
+    title: "Catalogo de Pokemons",
+    description:
+      "Um catalogo com 500 pokemons para conhecelos",
+    tecnology:[
+      {
+        name: "html5",
+      },
+      {
+        name: "css3",
+      },
+      {
+        name: "javascript",
+      },
+      {
+        name: "react",
+      },
+      {
+        name: "sass",
+      },
+    ],
+    linkCodigo: "https://github.com/victorsalves99/catalogo-pokemon",
+    linkSite: "https://catalogo-pokemon.vercel.app/",
+    cartegory: "myproject",
+  },
+  {
     title: "Consultas Github",
     description:
       "Aplicação web para fazer consultas a usuarios e  repositorios  do Github ",
