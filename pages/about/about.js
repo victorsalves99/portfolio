@@ -40,7 +40,7 @@ const certificatesList = [
     img: "../../img/certificates/algoritmo.jpg",
   },
   {
-    title: "AVASCRIPT",
+    title: "JAVASCRIPT",
     institution: "CURSO EM VÍDEO",
     img: "../../img/certificates/javascript.jpg",
   },
