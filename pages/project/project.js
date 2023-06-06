@@ -212,6 +212,25 @@ const projetos = [
     cartegory: "courseProject",
   },
   {
+    title: "Loterica",
+    description:
+      "Aplicação simples para sortear números  de jogos da loteria",
+    tecnology:[
+      {
+        name: "html5",
+      },
+      {
+        name: "css3",
+      },
+      {
+        name: "javascript",
+      },
+    ],
+    linkCodigo: "https://github.com/victorsalves99/loterica",
+    linkSite: "https://victorsalves99.github.io/loterica/",
+    cartegory: "myproject",
+  },
+  {
     title: "Catalogo de Pokemons",
     description:
       "Um catalogo com 500 pokemons para conhecelos",
